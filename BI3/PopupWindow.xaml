@@ -1,0 +1,17 @@
+﻿<Window x:Class="BI3.PopupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BI3"
+        mc:Ignorable="d"
+        Width="200" SizeToContent="Height" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="2" Background="#d3d4c9" Grid.ColumnSpan="2">
+            <StackPanel>
+                <TextBox x:Name="txtBox" Background="#d3d4c9" VerticalAlignment="Center" TextAlignment="Center" Padding="0 0 0 10" FontSize="16" TextWrapping="Wrap" Text="Mjera nije brojčana vrijednost, nemoguće provesti agregacijske funkcije."/>
+                <Button Content="Ok" FontSize="20" VerticalAlignment="Center" Click="ClosePopup"></Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
